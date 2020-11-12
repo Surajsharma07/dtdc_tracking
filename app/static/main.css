@@ -20,8 +20,8 @@ html, body {
 .container h1 {
   font-family: Arial, sans-serif;
   font-size: 30px;
-  color: #DDCCEE;
-  margin-top: 80px;
+  
+  margin-top: 120px;
 }
 
 .container button {
@@ -43,3 +43,13 @@ html, body {
 .output {
   display: inline-block;
 }
+.footer {
+  align-items: center;
+  text-align: center;
+  
+
+
+
+
+}
+

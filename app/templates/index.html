@@ -6,17 +6,23 @@
 </head>
   <body>
     <div class="container">
-      <h1>DTDC Track</h1>
-      <h3>Please upload your CSV file. <em>address</em> or <em>Orders</em></h3>
+      <h1>DTDC Mass Track</h1>
+      <h3>Please upload your CSV file</h3>
         <form action="{{url_for('success_table')}}" method="POST" enctype="multipart/form-data">
           <input type="file" accept=".csv" name="file" />
-          <button type="submit"> Submit </button>
+          <button type="submit" class="button"> Submit </button>
         </form>
       <div class="output">
         {{text|safe}}
         {% if btn %}
           {% include btn %}
         {% endif %}
+      </div>
+    </div>
+      <div class="footer">
+        <p>With ❤️ by <em> Suraj Sharma</em><br><a href="https://github.com/Surajsharma07/dtdc_tracking">V.1(Beta)</a></p>
+        <p>Currently this only supports csv containing awb numbers only seperated by comma(,).</p>
+        <p><a href="https://raw.githubusercontent.com/Surajsharma07/dtdc_tracking/main/test.csv"> Click here</a> for sample CSV file.</p>
       </div>
   </div>
   </body>
