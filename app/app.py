@@ -54,7 +54,7 @@ def success_table():
                 try:
                     with open(file_name, 'a') as csvfile:
                         #header = str(i)
-                        csv_col = ['dateWithNoSuffix', 'deliveryStatus', 'origin']
+                        csv_col = ['deliveryStatus', 'dateWithNoSuffix', 'origin']
 
                         writer = csv.DictWriter(csvfile, csv_col)
                         writer.writerow(rdict)
